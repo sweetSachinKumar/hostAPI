@@ -4,6 +4,9 @@ const app = express()
 const PORT =  process.env.PORT || 5000
 const connectDB = require('./db/connect')
 
+let cors = require("cors");
+app.use(cors());
+
 
 app.get('/', (req,res)=>{
     res.send("HI, I am live")
