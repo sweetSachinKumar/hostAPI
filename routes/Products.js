@@ -7,7 +7,6 @@ const {getAllProducts, getAllProductsTesting} = require('../controller/products'
 router.route('/').get(getAllProducts)
 router.route('/testing').get(getAllProductsTesting)
 
- 
 
 // toadd data 
 router.get("/adddata", async (req, res)=> {
