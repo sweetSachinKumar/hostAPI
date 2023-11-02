@@ -4,8 +4,8 @@ const Productss = require("../models/product")
 const {getAllProducts, getAllProductsTesting} = require('../controller/products')
 
 
-router.route('/').get(getAllProducts)
-router.route('/testing').get(getAllProductsTesting)
+router.route('/testing').get(getAllProducts)
+router.route('/').get(getAllProductsTesting)
 
 
 // toadd data 

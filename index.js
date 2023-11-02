@@ -8,11 +8,12 @@ let cors = require("cors");
 app.use(cors());
 
 
-app.get('/', (req,res)=>{
+app.use(express.json())
+app.use('/', require("./routes/Products"))
+
+app.get('/apps', (req,res)=>{
     res.send("HI, I am live")
 })
-app.use(express.json())
-app.use('/api/product', require("./routes/Products"))
 
 
 const start = async ()=> {
