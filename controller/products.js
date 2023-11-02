@@ -46,12 +46,7 @@ const getAllProductsTesting = async (req, res)=>{
     console.log(req.query)
 }
 
-
-
-
-
-
-
+ 
 
 const getAllProducts = async (req, res)=>{
     const fetchData = await Product.find({}).limit(3)
